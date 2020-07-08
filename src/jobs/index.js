@@ -1,7 +1,3 @@
-const registrationMail = require("./registrationMail");
-
-const rootWorker = {
-  ...registrationMail,
+module.exports = {
+  sendEmail: require("./sendMail"),
 };
-
-module.exports = rootWorker;
