@@ -5,7 +5,9 @@ const app = express();
 
 app.use(express.json());
 
-app.get("/", (req, res) => res.send("ola mundo servers workers"));
+app.get("/", (req, res) => {
+  res.send("ola mundo servers workers");
+});
 
 PORT = process.env.PORT || 4000;
 
